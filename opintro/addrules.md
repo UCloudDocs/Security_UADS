@@ -25,12 +25,12 @@
   - TCP：高防IP和源站IP进行TCP端口转发。
   - UDP：高防IP和源站IP进行UDP端口转发。
 
-**高防IP端口：**需要对外提供服务的高防IP和端口。如有有多个高防IP可通过下拉框选择。
+高防IP端口：需要对外提供服务的高防IP和端口。如有有多个高防IP可通过下拉框选择。
 
-**获取用户真实IP：**关闭后源站上看到的客户端源地址为高防回源地址。开启后高防转发设备会将用户的真实IP地址封装到TCP
+获取用户真实IP：关闭后源站上看到的客户端源地址为高防回源地址。开启后高防转发设备会将用户的真实IP地址封装到TCP
 option中，源站可通过安装TOA模块获取。
 
-**TOAID：**源站TOA模块将根据此ID通过TCP option获取用户真实IP。UCloud提供的TOA模块默认值是200。
+TOAID：源站TOA模块将根据此ID通过TCP option获取用户真实IP。UCloud提供的TOA模块默认值是200。
 
 ``` 
  TOA模块安装方式参考：https://docs.ucloud.cn/security/uads/faq/howtogetip?s[]=toa
