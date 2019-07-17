@@ -60,8 +60,6 @@
 
 如提示未找到该模块，可按如下步骤进行手工编译与加载：
 
-<WRAP left round box 100%>
-
 （1）下载对应版本的源码包，目前只有Centos 6.5和Centos 7的源码包供下载：
 
 > <http://ddospcap.ufile.ucloud.cn/toa_centos6.5_v2.tar.gz>
