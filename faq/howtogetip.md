@@ -8,20 +8,19 @@
 
 通用高防获取真实IP地址,
 可以在您的源站服务器上加载UCloud专有的内核模块，让应用直接获取到源IP，这时候，再去查看日志，就是访问者的真实IP了。  
-由于经过加速，在日志中看到的访问者IP全部变为PathX的出口IP。 如果需要获取真实的客户端IP,
+由于经过高防后，在日志中看到的访问者IP全部变为高防的回源IP。 如果需要获取真实的客户端IP,
 可以在您的源站服务器上加载UCloud专有的内核模块，让应用直接获取到源IP，这时候，再去查看日志，就是访问者的真实IP了。  
 **Linux系统**  
 64位的linux系统可运行"modprobe toa"尝试加载模块，成功后无需其他操作。  
 如提示未找到该模块，可按如下步骤进行手工编译与加载：
 
-1.
-查看当前内核版本号，确认依赖```kernel-devel```、```kernel-headers```是否安装以及版本号是否与内核一致(```uname
+1.查看当前内核版本号，确认依赖```kernel-devel```、```kernel-headers```是否安装以及版本号是否与内核一致(```uname
 -r && rpm -qa |egrep 'kernel-devel|kernel-headers'```)：  
 - 若一致，跳过步骤2，进行toa模块的编译安装  
 - 若不一致，如下图：  
-![](/images/toa_201810301429.png) 需要卸载后进行步骤2操作(rpm \\-e
-\\-\\-nodeps kernel\\-devel kernel\\-headers)  
-\\- 若未安装依赖，如下图： ![](/network/pathx/toa_201810301432.png)
+![](/images/toa_201810301429.png) 需要卸载后进行步骤2操作(```rpm -e
+ --nodeps kernel-devel kernel-headers```)  
+- 若未安装依赖，如下图： ![](/network/pathx/toa_201810301432.png)
 
   
 2\. yum搜索是否有与当前内核版本对应的‘kernel-devel、kernel-headers’包  
