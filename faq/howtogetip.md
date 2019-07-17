@@ -21,7 +21,7 @@
 ![](/images/toa_201810301429.png) 
 需要卸载后进行步骤2操作(```rpm -e --nodeps kernel-devel kernel-headers```)  
 - 若未安装依赖，如下图： 
-![](/network/pathx/toa_201810301432.png)
+![](/images/toa_201810301432.png)
 
   
 2. yum搜索是否有与当前内核版本对应的‘kernel-devel、kernel-headers’包  
@@ -82,7 +82,7 @@ echo "insmod /lib/modules/`uname -r`/kernel/net/netfilter/ipvs/toa.ko">> /etc/rc
 
 日志路径：/etc/httpd/logs/access_log 
 
-![](/network/pathx/apache获取真实地址.png)
+![](/images/apache获取真实地址.png)
 
   - 其他web配置环境， 采用同样方法在相关web 日志文件中检查即可  
 
