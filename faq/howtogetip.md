@@ -78,9 +78,7 @@ echo "insmod /lib/modules/`uname -r`/kernel/net/netfilter/ipvs/toa.ko">> /etc/rc
 
 ![](/images/nginx_真实地址.png)
 
-  - **apache环境下**，直接在apache日志中查看真实访问者地址  
-
-日志路径：/etc/httpd/logs/access_log 
+  - **apache环境下**，直接在apache日志中查看真实访问者地址 日志路径：`/etc/httpd/logs/access_log`
 
 ![](/images/apache获取真实地址.png)
 
