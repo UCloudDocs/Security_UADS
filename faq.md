@@ -2,4 +2,4 @@
 
 **目录**
 
-[通用高防](/security/uads/faq/game)
+[常见问题](/security/uads/faq/game)
