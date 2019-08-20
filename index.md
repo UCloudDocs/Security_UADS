@@ -12,7 +12,7 @@
 
 [操作指南](/security/uads/opintro)
 
-[产品价格](/security/uads/price)
+[计费说明](/security/uads/price)
 
 [使用注意事项](/security/uads/warning)
 
