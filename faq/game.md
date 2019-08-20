@@ -87,8 +87,6 @@
 > 
 > insmod /lib/modules/\`uname -r\`/kernel/net/netfilter/ipvs/toa.ko
 
-</WRAP>
-
 <wrap hi> 有问题请联系我们，如版本不符合，需升级内核再加载该模块；或者可直接使用UCloud 64位Centos
 6.5/7系统的云主机，默认带有toa模块。</wrap>
 
