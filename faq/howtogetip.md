@@ -14,7 +14,7 @@
 64位的linux系统可运行"modprobe toa"尝试加载模块，成功后无需其他操作。  
 如提示未找到该模块，可按如下步骤进行手工编译与加载：
 
-1.查看当前内核版本号，确认依赖kernel-devel、kernel-headers是否安装以及版本号是否与内核一致(uname
+1. 查看当前内核版本号，确认依赖kernel-devel、kernel-headers是否安装以及版本号是否与内核一致(uname
 -r && rpm -qa |egrep 'kernel-devel|kernel-headers')：  
 - 若一致，跳过步骤2，进行toa模块的编译安装  
 - 若不一致，如下图：  
@@ -74,11 +74,11 @@ toa模块安装验证如下（lsmod |grep toa）：
 echo "insmod /lib/modules/`uname -r`/kernel/net/netfilter/ipvs/toa.ko">> /etc/rc.local
 ```  
 
- **nginx环境下**，直接在nginx 日志中查看真实访问者地址,日志路径： /var/log/nginx/access.log
+**nginx环境下**，直接在nginx 日志中查看真实访问者地址,日志路径： /var/log/nginx/access.log
 
 ![](/images/nginx_真实地址.png)
 
-  **apache环境下**，直接在apache日志中查看真实访问者地址,日志路径：/etc/httpd/logs/access_log
+**apache环境下**，直接在apache日志中查看真实访问者地址,日志路径：/etc/httpd/logs/access_log
 
 ![](/images/apache获取真实地址.png)
 
