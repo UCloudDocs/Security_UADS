@@ -1,8 +1,7 @@
 
-
 # 主要功能
 
-**功能点**   | **功能描述**                                         
+**功能点**   | **功能描述**
 | ----- | ---------------------------------------------- |
 | **基本防护**      | 畸形数据包拦截<br> syn flood、ack flood、udp flood、icmp flood等防护<br> 连接耗尽攻击、http get/post flood等防护<br> dns request/response flood等防护 |
 | **DNS检防**       | 根据DNS查询/应答报文的NAME、TYPE、CLASS特征进行检测防护 |
